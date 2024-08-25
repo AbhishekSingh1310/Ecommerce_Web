@@ -1,0 +1,60 @@
+.navbar{
+    width: 100%;
+    height: 50%;
+}
+.navPart-1 {
+    width: 90%;
+    height: 50%;
+    margin-left: 6rem;
+  }
+
+  ul{
+    margin: 5px 12rem;
+    /* margin-left: 14rem; */
+  }
+  
+  nav .navPart-1 ul li a{
+    font-size: 16px;
+    gap: 5px;
+    margin: 5px 10px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    border-radius: 5rem;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  nav .navPart-1 ul li .wave:hover{
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  nav .navPart-1 ul li a:hover{
+    background: #2bbef9;
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .wave {
+    animation-name: wave-animation;  
+    animation-duration: 2.5s;       
+    animation-iteration-count: infinite;  
+    transform-origin: 70% 70%;       
+    display: inline-block;
+    color: #2bbef9;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) } 
+    100% { transform: rotate( 0.0deg) }
+  }
